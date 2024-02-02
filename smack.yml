@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+          - name: install apache2 on ubuntu node
+            apt:
+                   name: apache2
+                   state: present
+                   
+          - name: install wget on ubuntu node
+            apt:
+                   name: wget
+                   state: present         
