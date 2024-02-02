@@ -5,5 +5,5 @@
           - name: install openJDK 8 on node
             apt:
                   name: openjdk-8-jre
-                  status: present
+                  state: present
             
