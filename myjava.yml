@@ -4,8 +4,7 @@
   tasks:
           - name: i want to install openJDK on ubuntu node
             apt: 
-                   name: openjdk-8-jr0
+                   name: openjdk-8-jre
                    status: present
 
             when: anisble_0s_family == "Debian"
-            
