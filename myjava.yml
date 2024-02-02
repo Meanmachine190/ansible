@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-          - name: i want to install openJDK on ubuntu node
+          - name: i want to install openJDK 8 on ubuntu node
             apt: 
                    name: openjdk-8-jre
                    status: present
