@@ -11,7 +11,7 @@
 
 
           - name: install openJDK 8 on node
-            apt: 
+            yum: 
                   name: httpd
                   state: present
             when: ansible_os_family == "RedHat"      
