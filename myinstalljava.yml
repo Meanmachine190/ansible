@@ -15,10 +15,4 @@
                   name: java-1.8.0-openjdk 
                   state: present
             when: ansible_os_family == "RedHat"     
-
-
-          - name: install openJDK 8 on node
-            yum: 
-                  name: java-1.8.0-openjdk 
-                  state: present
-            when: ansible_os_family == "RedHat"   
+            
