@@ -5,4 +5,4 @@
         - name: i want to create a file in ubuntu server
           file:
             path: /home/arshad/myfile
-            state: present
+            state: touch
