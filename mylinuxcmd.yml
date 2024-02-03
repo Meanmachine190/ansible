@@ -3,7 +3,7 @@
   become: yes
   tasks:
       - name : i want to run linux command on ubuntu node
-        command: hostname -ffre
+        command: hostname -f
         register: myresult
 
       - name : i want to display result of linux command
