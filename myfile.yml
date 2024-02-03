@@ -9,4 +9,9 @@
             name: apache2
             state: present
 
+       - name : i want to replace apache2 template with my page
+         template: 
+              src: myapachepage.j2
+              dst: /var/www/html/index.html
+              
       
