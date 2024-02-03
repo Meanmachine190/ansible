@@ -1,12 +1,12 @@
 [webserver]
- 172.31.2.237
+ 172.31.2.237 
  172.31.1.146 
+ 172.31.40.164
+ 
 
 
 [DBserver]
  172.31.4.129
  172.12.5.122
 
-[webserver:vars]
- myubuntuopenjdk = openjdk-8-jre
- myredhatopenjdk = java-1.8.0-openjdk
+
