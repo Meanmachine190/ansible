@@ -6,3 +6,7 @@
 [DBserver]
  172.31.4.129
  172.12.5.122
+
+[webserver:vars]
+ myubuntuopenjdk = openjdk-8-jreee
+ myredhatopenjdk = java-1.8.0-openjdk
