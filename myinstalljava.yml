@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: webserver
   become: yes
   tasks:
           - name: install openJDK 8 on node
