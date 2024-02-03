@@ -19,4 +19,4 @@
 
       - name : i want to display variable
         debug: 
-           msg: "{{myvara1}}"
+           msg: "{{myvar1}}"
