@@ -1,0 +1,13 @@
+---
+- hosts: 172.31.2.237
+  become: yes
+  tasks:
+      - name : i want to run linux command on ubuntu node
+        command: hostname -f
+        register: myresult
+
+      - name : i want to display result of linux command
+        debug:
+           msg: "{{myresult}}"
+            
+      
