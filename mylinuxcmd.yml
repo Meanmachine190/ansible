@@ -9,5 +9,17 @@
       - name : i want to display result of linux command
         debug:
            msg: "{{myresult}}"
-            
+
+      - name : i waant to list git
+        apt:
+           name: git
+           state: present
+        when: myresult.stderr ==""
+
+      - name : i want to list tree
+        apt:
+           name: tree
+           state: present
+        when: myresult.stderr !=""
+        
       
