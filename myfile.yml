@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.2.237
+  become: yes
+  state: 
+       - include_tasks: myfilehandle.yml
+
+       - name : i want to install apache2 
+         apt:
+            name: apache2
+            state: present
+            
+      
