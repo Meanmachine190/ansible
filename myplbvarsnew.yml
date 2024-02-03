@@ -1,0 +1,17 @@
+---
+- hosts: webserver
+  become: yes
+  vars:
+   myvar1 : git
+   myvar2 : wget
+   myvar3 : tree 
+  tasks: 
+      - name : i want to install git on ubuntu node
+        apt: 
+             name: "{{item}}"
+             state: present
+        when: ansible_os_family == "Debian"
+        loop:
+        - "{{myvar1}}"
+        - "{{myvar2}}"
+        - "{{myvar3}}"
