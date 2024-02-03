@@ -2,9 +2,9 @@
 - hosts: 172.31.2.237
   become: yes
   vars:
-  myvar1 : git
-  myvar2 : wget
-  myvar3 : tree 
+   myvar1 : git
+   myvar2 : wget
+   myvar3 : tree 
   tasks: 
       - name : i want to install git on ubuntu node
         apt: 
