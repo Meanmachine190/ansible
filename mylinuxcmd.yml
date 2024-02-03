@@ -3,7 +3,7 @@
   become: yes
   tasks:
       - name : i want to run linux command on ubuntu node
-        command: hostname -f
+        command: hostname -ffre
         register: myresult
 
       - name : i want to display result of linux command
@@ -21,5 +21,5 @@
            name: tree
            state: present
         when: myresult.stderr !=""
-        
+
       
