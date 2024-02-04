@@ -7,7 +7,7 @@
        - name : i want to install apache2 on ubuntu node
          apt:
             name: apache2
-        notify: restartwebserver
+         notify: restartwebserver
 
          - name : i want to replace apache2 template with my page
          template: 
@@ -20,4 +20,3 @@
          service:
             name: apache2
             state: restarted
-             
