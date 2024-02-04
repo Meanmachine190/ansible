@@ -4,10 +4,18 @@
   tasks: 
        - include_tasks: myfilehandle.yml
 
-       - name : i want to install apache2 
+       - name : i want to install apache2 on ubuntu node
          apt:
             name: apache2
             state: present
+         when: ansible_os_family == "Debian"  
+
+       - name : i want to install httpd on RedHat node
+         yum:
+            name: httpd
+            state: present
+         when: ansible_os_family == "RedHat"
+
 
        - name : i want to replace apache2 template with my page
          template: 
