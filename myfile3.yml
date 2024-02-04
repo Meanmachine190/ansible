@@ -9,7 +9,7 @@
             name: apache2
          notify: restartwebserver
 
-         - name : i want to replace apache2 template with my page
+       - name : i want to replace apache2 template with my page
          template: 
               src: mytemplate/mypage.j2
               dest: /var/www/html/index.html
