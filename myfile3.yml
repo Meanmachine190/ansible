@@ -1,0 +1,23 @@
+---
+- hosts: 172.31.2.237
+  become: yes
+  tasks: 
+       - include_tasks: myfilehandle.yml
+
+       - name : i want to install apache2 on ubuntu node
+         apt:
+            name: apache2
+        notify: restartwebserver
+
+         - name : i want to replace apache2 template with my page
+         template: 
+              src: mytemplate/mypage.j2
+              dest: /var/www/html/index.html
+
+  
+  handlers:
+       - name: restartwebserver
+         service:
+            name: apache2
+            state: restarted
+             
