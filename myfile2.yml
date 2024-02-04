@@ -10,7 +10,7 @@
             state: present
          when: ansible_os_family == "RedHat"
 
-         - name : i want to replace httpd template with my page
+       - name : i want to replace httpd template with my page
          template: 
               src: mytemplate/mypage2.j2
               dest: /var/www/html/index.html
