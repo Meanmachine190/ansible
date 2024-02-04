@@ -1,2 +1,7 @@
 ---
 # tasks file for myprojectifle
+          - name: install apache2 8 on node
+            apt:
+                  name: apache2
+                  state: present
+            when: ansible_os_family == "Debian"
