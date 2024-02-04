@@ -1,2 +1,7 @@
 ---
 # handlers file for myprojectifle
+- name: restartwebserver
+  service:
+         name: apache2
+         state: restarted
+ 
